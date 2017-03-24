@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en" data-framework="javascript">
+<head>
+  <meta charset="utf-8">
+  <title>Simple Lottery</title>
+  <link rel="stylesheet" href="style/bootstrap.min.css">
+  <link rel="stylesheet" href="style/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row header">
+      <h1>Simple Lottery</h1>
+    </div>
+  </div>
+
+  <div class="container" id="lottery_form">
+    <div class="row" id="winner_block">
+      <p>And the winner is: </p>
+      <p id="winner"></p>
+      <button id="pickWinner" class="btn btn-warning" onclick="determineWinner()">New winner</buton>
+    </div>
+    <div class="row" id="form_container">
+      <p>Registration Form</p>
+      <form id="registration_form">
+        <ul>
+          <li><label for="firstname">First Name: </label><input id="firstname" required type="text" pattern="[a-zA-Z]*" maxlength="20" placeholder="First Name"></li>
+          <li><label for="lastname">Last Name: </label><input id="lastname" required type="text" pattern="[a-zA-Z]*" maxlength="20" placeholder="Last Name"></li>
+          <li><label for="email">E-mail: </label><input id="email" required type="email" pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" maxlength="20" placeholder="name@mail.com"></li>
+          <li><label for="phone">Phone: </label><input id="phone" type="text" pattern="[0-9]{10}" maxlength="10" placeholder="0123456789"></li>
+          <li><label for="dob">Date of Birth: </label><input id="dob" type="text" pattern="(0?[1-9]|[12][0-9]|3[01])[\/\-](0?[1-9]|1[012])[\/\-]\d{4}" maxlength="10" placeholder="DD/MM/YYYY"></li>
+        </ul>
+        <input type="submit" class="btn btn-primary" id="register">
+      </form>
+    </div>
+  </div>
+
+  <div class="container" id="participants">
+    <div class="row">
+      <table id="participants_table">
+        <tr>
+          <th></th>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>E-mail</th>
+          <th>Phone number</th>
+          <th>Date of Birth</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div id=info>
+    <span>
+      <span id="info_h">Info:</span></br>
+      Add lottery participants with the registration form;
+      Determine winner with the New Winner button;</br>
+      Edit by chaging participants data in the table and pressing save button in the corresponding row;</br>
+      Delete entry by clicking the delete button; </br>
+    </span>
+  </div>
+
+  <script src="script/main.js"></script>
+</body>
+</html>

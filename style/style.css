@@ -1,0 +1,150 @@
+body, html {
+  background: #F1F1F1 !important;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*HEADER*/
+.header {
+  text-align: center;
+  margin: auto;
+  padding-bottom: 20px;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 20px;
+}
+
+/*PARTICIPANT SUBMITION FORM*/
+#lottery_form {
+  text-align: center;
+}
+#winner_block {
+  margin: auto;
+  width: 500px;
+}
+#winner_block p {
+  float:left;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+#winner {
+  padding: 0 20px;
+  color: yellow;
+  background: rgba(255, 0, 0, 0.77);
+  margin-left: 20px;
+  margin-top: 5px;
+  border-radius: 5px;
+}
+#pickWinner {
+  float: right;
+}
+#form_container {
+  margin: auto;
+  padding: 30px 0;
+  width: 500px;
+}
+#form_container p {
+  margin: 15px 0 25px 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+li {
+  list-style: none;
+  margin: 12px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+}
+li label {
+  display: inline-block;
+  width: 120px;
+  vertical-align: baseline;
+  text-align: right;
+  margin-right: 20px;
+}
+li input {
+  padding: 3px 4px 4px;
+  width: 300px;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+#register {
+  float: right;
+}
+
+
+/*PARTICIPANTS TABLE*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*INPUT FIELDS*/
+input:valid {
+  //border: 2px solid;
+}
+input:invalid {
+  border: 1px solid rgba(255, 0, 0, 0.46);
+  border-radius: 5px;
+}
+input:focus {
+  border-radius: 0;
+}
+
+.invalid_table_field {
+  border: 1px solid rgba(255, 0, 0, 0.46);
+  border-radius: 5px;
+}
+.delete_btn {
+  border: none;
+  background:url(../img/delete.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 1px rgba(136, 136, 136, 0.44);
+  border-radius: 70px;
+}
+.delete_btn:focus {
+  outline:none;
+  border: none;
+  border-radius: 70px;
+  box-shadow: 1px 1px 1px rgba(136, 136, 136, 0.44);
+}
+.save_btn:focus {
+  outline:none;
+  border: none;
+  border-radius: 70px;
+  box-shadow: 1px 1px 1px rgba(136, 136, 136, 0.44);
+}
+.save_btn {
+  border: none;
+  background:url(../img/save.svg);
+  background-repeat: no-repeat;
+  width: 25px;
+  height: 25px;
+  margin-top: 5px;
+  box-shadow: 1px 1px 1px rgba(136, 136, 136, 0.44);
+  border-radius: 70px;
+}
+
+/*INFO*/
+#info {
+  text-align: center;
+  margin: 35px 0;
+  color: #999;
+  font-size: 0.9em;
+}
+#info_h {
+  font-weight: bold;
+}
